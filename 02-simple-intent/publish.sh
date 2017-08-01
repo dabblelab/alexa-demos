@@ -10,9 +10,9 @@ if [ ! -f ./$ZIP_FILE ]; then
   zip -r  "../$ZIP_FILE" * -x "*.DS_Store"
   echo "$ZIP_FILE created."
   cd ..
-  aws lambda update-function-code --function-name $SKILL_NAME --zip-file fileb://$ZIP_FILE > ./deployments/$SKILL_NAME-$NOW.json
   if [ ! -f ./deployments ]; then
     mkdir deployments
   fi
+  aws lambda update-function-code --function-name $SKILL_NAME --zip-file fileb://$ZIP_FILE > ./deployments/$SKILL_NAME-$NOW.json
   mv $ZIP_FILE ./deployments/
 fi

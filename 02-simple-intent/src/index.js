@@ -9,7 +9,10 @@ exports.handler = function(event, context, callback){
 var handlers = {
 
   'LaunchRequest': function () {
-    this.emit(':ask', 'Hello World!', 'I would ask a question if this skill was completed.');
+    this.emit(':ask', 'Can you say hello?', 'Say hello to test the Hello Intent.');
+  },
+  'HelloIntent': function() {
+    this.emit(':tell', 'Hello! Nice to meet you.');
   },
   'Unhandled': function (){
     this.emit(':tell', 'Sorry, I dont understand.');
