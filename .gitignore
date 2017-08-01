@@ -1,2 +1,4 @@
 notes.md
 node_modules/
+deployments/
+.DS_Store
