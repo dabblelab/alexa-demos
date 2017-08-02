@@ -2,7 +2,7 @@
 
 There are bash scripts (.sh) that are included with the sample code. These are mostly wrappers for the [AWS Command Line Interface](http://aws.amazon.com/cli) (aws-cli) that are used to simplify the process of creating and deploying Lambda functions. 
 
-To use these scripts, you'll need to install and configure the aws-cli and you'll need a computer with Bash on it. Bash is available by default on Macs and Linux but not on Windows. I quick Google search says you can install Bash on Windows which should allows these scripts to work but we have not tested that. 
+To use these scripts, you'll need to install and configure the aws-cli and you'll need a computer with Bash on it. Bash is available by default on Mac and Linux but not on Windows. A quick Google search shows that you can install bash on Windows. That should allows these scripts to work on Windows but that has not been tested.
 
 ## Creating a Lambda function for an Alexa Skill using the AWS CLI
 
