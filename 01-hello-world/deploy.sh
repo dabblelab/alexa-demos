@@ -1,4 +1,4 @@
-SKILL_NAME="alexa-demo"
+SKILL_NAME="hello-world-alexa-skill"
 CODE_DIR="src"
 NOW=$(date +%s)
 ZIP_FILE="$SKILL_NAME-$NOW.zip"
