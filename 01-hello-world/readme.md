@@ -4,8 +4,6 @@ This is a bare bones template for a Node.js 'Hello World' skill. It only handles
 
 ### index.js
 ```javascript
-// index.js
-
 var Alexa = require('alexa-sdk');
 
 exports.handler = function(event, context, callback){
@@ -15,12 +13,9 @@ exports.handler = function(event, context, callback){
 };
 
 var handlers = {
-
   'LaunchRequest': function () {
-    this.emit(':ask', 'Hello World!', 'I would ask a question if this skill was completed.');
-  },
-  'Unhandled': function (){
-    this.emit(':tell', 'Sorry, I dont understand.');
+    this.emit(':tell', 'Hello World!');
   }
 };
 ```
+NOTE: You can download a .zip package that contains the aws-sdk node module from: http://cdn.dabblelab.com/downloads/hello-world-alexa-skill.zip
