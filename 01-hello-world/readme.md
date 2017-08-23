@@ -18,4 +18,4 @@ var handlers = {
   }
 };
 ```
-NOTE: You can download a .zip package that contains the aws-sdk node module from: http://cdn.dabblelab.com/downloads/hello-world-alexa-skill.zip
+NOTE: You can download a .zip package that contains the alexa-sdk node module from: http://cdn.dabblelab.com/downloads/hello-world-alexa-skill.zip
