@@ -1,19 +1,21 @@
-FUNCTION_NAME="alexa-demo"
+FUNCTION_NAME=$1
 RGEION=us-east-1
-RUNTIME=nodejs6.10 
+CLI_PROFILE=default
+RUNTIME=nodejs6.10
 ROLE=arn:aws:iam::851751148026:role/lambda_basic_execution #this role must exist
+NOW=$(date +%s)
 
-aws --region $RGEION lambda create-function \
+aws --region $RGEION --profile $CLI_PROFILE lambda create-function \
 --function-name $FUNCTION_NAME \
 --runtime $RUNTIME \
 --role $ROLE \
 --handler "index.handler" \
---zip-file fileb://hello-world.zip \
+--zip-file fileb://hello-world-alexa-skill.zip \
 --description "" \
 --timeout 30
 
-aws --region $RGEION lambda add-permission \
+aws --region $RGEION --profile $CLI_PROFILE lambda add-permission \
 --function-name $FUNCTION_NAME \
---statement-id "1234" \
+--statement-id NOW \
 --action "lambda:InvokeFunction" \
 --principal "alexa-appkit.amazon.com"
