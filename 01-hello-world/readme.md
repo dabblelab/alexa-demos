@@ -1,6 +1,6 @@
 # Hello World Skill
 
-This is a bare bones template for a Node.js 'Hello World' skill. It only handles the 'LaunchRequest' so all this skill does is say 'Hello World' when it is opened.
+This is a bare bones template for a Node.js 'Hello World' skill. It only handles the 'LaunchRequest' so all this skill does is say 'Hello World' when the skill is opened.
 
 ### index.js
 ```javascript
